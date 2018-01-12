@@ -15,8 +15,8 @@ function attachSignin(element) {
     googleAuth.attachClickHandler(element, {},
         function(googleUser) {
         	console.log("success signin");
-            document.getElementById('name').innerText = "Signed in: " +
-                googleUser.getBasicProfile().getName();
+            console.log(googleUser.getBasicProfile().getName());
+            console.log(googleUser.getBasicProfile().getImageUrl());
         },
         function(error) {
         	console.log("failed signin" + error);
