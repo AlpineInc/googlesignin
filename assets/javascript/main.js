@@ -6,7 +6,7 @@ gapi.load("auth2", function() {
         client_id: "245751156594-tp337vitvvl9ltm4jhpoirm249v20tsf.apps.googleusercontent.com",
         scope: "profile"
     });
-    attachSignin(document.getElementById("btn-signIn"));
+    attachSignin(document.getElementById("customBtn"));
 });
 
 
