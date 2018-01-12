@@ -11,8 +11,8 @@ gapi.load("auth2", function() {
 
 
 function attachSignin(element) {
-    console.log(element.id);
-    auth2.attachClickHandler(element, {},
+    console.log(element);
+    googleAuth.attachClickHandler(element, {},
         function(googleUser) {
             document.getElementById('name').innerText = "Signed in: " +
                 googleUser.getBasicProfile().getName();
