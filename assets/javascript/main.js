@@ -19,7 +19,7 @@ function attachSignin(element) {
                 googleUser.getBasicProfile().getName();
         },
         function(error) {
-        	console.log("failed signin");
+        	console.log("failed signin" + error);
 
             alert(JSON.stringify(error, undefined, 2));
         });
